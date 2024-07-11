@@ -1,0 +1,40 @@
+
+.image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container h1 {
+    position: absolute;
+    color: white;
+    font-size: 70px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    padding-left: 50%;
+}
+
+.responsive-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.sobre-mi {
+    height: 500px;
+    padding: 500px;
+    padding-top: 125px;
+    text-align: center;
+  }
+  
+#carouselExampleCaptions {
+    max-width: 50%; /* Adjust as needed */
+    margin: 0 auto;
+  }
+
+
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+  }
