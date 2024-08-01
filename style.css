@@ -11,12 +11,10 @@ body {
     color: white;
 }
 
-
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-
     background-color: black;
     scroll-behavior: smooth;
 }
