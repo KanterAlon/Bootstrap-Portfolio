@@ -8,11 +8,14 @@
 body {
     font-family: 'Proxima nova', sans-serif;
     color: white;
+    overflow-y: scroll; /* Forzamos el desplazamiento vertical */
 }
+
 html {
     margin: 0;
     padding: 0;
 }
+
 body, html {
     margin: 0;
     padding: 0;
@@ -77,6 +80,7 @@ body, html {
 section {
     padding-block: 70px;
 }
+
 .button-container {
     display: flex;
     justify-content: center;
@@ -98,4 +102,30 @@ section {
     background-color: #ffffff;
     color: #1f1f1f;
     border: 2px solid #1f1f1f;
+}
+
+/* Safari y Chrome */
+body::-webkit-scrollbar {
+    width: 0;
+    background: transparent; /* Opcional: ocultar fondo de la barra de desplazamiento */
+}
+
+/* Firefox */
+body {
+    scrollbar-width: none; /* Ocultar la barra de desplazamiento */
+}
+
+/* Internet Explorer 10+ y Edge */
+body {
+    -ms-overflow-style: none; /* Ocultar la barra de desplazamiento */
+}
+
+body {
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* También se puede eliminar esta línea si no se necesita */
 }
