@@ -15,7 +15,10 @@ html {
     margin: 0;
     padding: 0;
 }
-
+p
+{
+    text-align: justify;
+}
 body, html {
     margin: 0;
     padding: 0;
@@ -77,6 +80,19 @@ body, html {
     height: 30px;
 }
 
+.offcanvas-body .nav-link {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.offcanvas-body .nav-link:hover {
+    background-color: #f0f0f0;
+    color: black;
+}
+
 section {
     padding-block: 70px;
 }
@@ -128,4 +144,55 @@ body {
 body::-webkit-scrollbar {
     width: 0px;
     background: transparent; /* También se puede eliminar esta línea si no se necesita */
+}
+
+.accordion-body
+{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.accordion-body p, .accordion-body h2 {
+    margin: 0;
+}
+
+.education-body
+{
+    display: flex;
+    gap: 2rem;
+}
+
+.education-body > div {
+    flex: 1;
+}
+
+.card-skill {
+    height: 600px;
+}
+
+.card-skill .card-body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-card-skill {
+    position: absolute;
+    bottom: .5rem;
+}
+
+.cards-proexp
+{
+    padding: 2rem;
+}
+
+.cardproexp {
+    height: 520px;
+}
+
+.img-proexp
+{
+    height: 40rem;
 }
