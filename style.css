@@ -75,7 +75,7 @@ body, html {
 }
 
 section {
-    padding-bottom: 100px;
+    padding-block: 70px;
 }
 .button-container {
     display: flex;
