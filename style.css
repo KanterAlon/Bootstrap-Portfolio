@@ -196,3 +196,10 @@ body::-webkit-scrollbar {
 {
     height: 40rem;
 }
+
+.card-img, .card-img-top {
+
+    height: 40%;
+    object-fit: cover;
+}
+
