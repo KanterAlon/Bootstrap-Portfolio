@@ -190,6 +190,8 @@ body::-webkit-scrollbar {
 
 .cardproexp {
     height: 520px;
+    display: flex;
+    flex-direction: column;
 }
 
 .img-card
