@@ -192,14 +192,14 @@ body::-webkit-scrollbar {
     height: 520px;
 }
 
-.img-proexp
+.img-card
 {
-    height: 40rem;
+    height: 300px;
 }
 
 .card-img, .card-img-top {
 
-    height: 40%;
+    height: 100%;
     object-fit: cover;
 }
 
