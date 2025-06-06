@@ -53,7 +53,7 @@
                 <div class="col">
                   <div class="card card-skill">
                     <div class="img-card">
-                    <img src="img\programming1.png" class="card-img-top" alt="Project 1 Image">
+                    <img src="img/programming1.png" class="card-img-top" alt="Project 1 Image">
                   </div>
                     <div class="card-body">
                       <h5 class="card-title">Marcos's Agency</h5>
@@ -66,7 +66,7 @@
                 <div class="col">
                   <div class="card card-skill">
                     <div class="img-card">
-                    <img src="img\programming2.png" class="card-img-top" alt="Project 2 Image">
+                    <img src="img/programming2.png" class="card-img-top" alt="Project 2 Image">
                   </div>
                   </div>
                     <div class="card-body">
@@ -80,7 +80,7 @@
                 <div class="col">
                   <div class="card card-skill">
                     <div class="img-card">
-                    <img src="img\programming3.png" class="card-img-top" alt="Project 3 Image">
+                    <img src="img/programming3.png" class="card-img-top" alt="Project 3 Image">
                   </div>
                     <div class="card-body">
                       <h5 class="card-title">Portfolio</h5>
@@ -102,7 +102,7 @@
                 <div class="col">
                   <div class="card card-skill">
                     <div class="img-card">
-                    <img src="img\programming1.png" class="card-img-top" alt="Programming">
+                    <img src="img/programming1.png" class="card-img-top" alt="Programming">
                     </div>
                     <div class="card-body">
                       <h5 class="card-title">Marcos's Agency</h5>
@@ -115,12 +115,12 @@
                 <div class="col">
                   <div class="card card-skill">
                     <div class="img-card">
-                    <img src="img\programming2.png" class="card-img-top" alt="Aeronautics">
+                    <img src="img/programming2.png" class="card-img-top" alt="Aeronautics">
                   </div>
                     <div class="card-body">
                       <h5 class="card-title">Aviation Info Hub</h5>
                       <p class="card-text">This project, Aviation Info Hub, is a reliable source for detailed information on airplanes, airports, and flight routes. It offers updated data, personalized search options, and an easy-to-use interface, catering to aviation enthusiasts and professionals alike.</p>
-                      <a href="https://project2-netlify-url.com" class="btn btn-primary btn-card-skill disabled">View Projecct</a>
+                      <a href="https://project2-netlify-url.com" class="btn btn-primary btn-card-skill disabled">View Project</a>
                     </div>
                   </div>
                 </div>
@@ -128,12 +128,12 @@
                 <div class="col">
                   <div class="card card-skill">
                     <div class="img-card">
-                    <img src="img\programming3.png" class="card-img-top" alt="Leadership">
+                    <img src="img/programming3.png" class="card-img-top" alt="Leadership">
                   </div>
                     <div class="card-body">
                       <h5 class="card-title">Portfolio</h5>
                       <p class="card-text">This portfolio showcases various projects and accomplishments</p>
-                      <a href="https://project3-netlify-url.com" class="btn btn-primary btn-card-skill disabled">View Projecct</a>
+                      <a href="https://project3-netlify-url.com" class="btn btn-primary btn-card-skill disabled">View Project</a>
                     </div>
                   </div>
                 </div>
@@ -149,7 +149,8 @@
       const root = document.documentElement;
       const themeBtn = document.getElementById('theme-toggle');
       const stored = localStorage.getItem('theme');
-      if (stored === 'dark') root.classList.add('dark');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (stored ? stored === 'dark' : prefersDark) root.classList.add('dark');
       themeBtn.addEventListener('click', () => {
         root.classList.toggle('dark');
         localStorage.setItem('theme', root.classList.contains('dark') ? 'dark' : 'light');
