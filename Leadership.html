@@ -205,7 +205,8 @@
       const root = document.documentElement;
       const themeBtn = document.getElementById('theme-toggle');
       const stored = localStorage.getItem('theme');
-      if (stored === 'dark') root.classList.add('dark');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (stored ? stored === 'dark' : prefersDark) root.classList.add('dark');
       themeBtn.addEventListener('click', () => {
         root.classList.toggle('dark');
         localStorage.setItem('theme', root.classList.contains('dark') ? 'dark' : 'light');
